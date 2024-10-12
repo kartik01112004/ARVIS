@@ -1,0 +1,15 @@
+.visualization-page {
+  text-align: center;
+  margin: 20px;
+  color: #f1f1f1; /* Light text for dark theme */
+}
+
+.chart-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.no-data {
+  color: #ff4c4c; /* Red color for no data warning */
+  font-size: 1.5rem;
+}

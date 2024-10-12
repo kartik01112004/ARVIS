@@ -1,0 +1,45 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Dark background */
+  padding: 10px 20px;
+  color: #f1f1f1; /* Light text for the dark theme */
+  font-size: 1.2rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50; /* Green for the logo */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo i {
+  margin-right: 10px; /* Add some space between icon and text */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4caf50; /* Hover effect with green color */
+}
+
+.nav-links i {
+  margin-right: 8px;
+}
