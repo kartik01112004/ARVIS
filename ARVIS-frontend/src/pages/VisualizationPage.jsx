@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./VisualizationPage.css"; // Import the new CSS for styling
 import { Bar } from "react-chartjs-2";
 import { useLocation } from "react-router-dom";
