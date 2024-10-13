@@ -20,7 +20,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <a href="#visualization" className="nav-link">
+          <a href="/visualization" className="nav-link">
             <BsGraphUp className="nav-icon" /> Visualization
           </a>
         </li>
