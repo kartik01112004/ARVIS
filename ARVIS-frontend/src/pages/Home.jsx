@@ -10,6 +10,28 @@ function Home() {
   const [data, setData] = useState(null);
   const navigate = useNavigate();
 
+  const handleSubmit = () => {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    fetch("http://localhost:5000/upload", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.text) {
+          console.log("Text extracted: ", data.text);
+          navigate("/response", {
+            state: { text: data.text, question: userQuestion },
+          });
+        } else {
+          console.error("Error: No text extracted");
+        }
+      })
+      .catch((error) => console.error("Error uploading file:", error));
+  };
+
   const handleFileDrop = (acceptedFiles) => {
     setFile(acceptedFiles[0]);
   };
